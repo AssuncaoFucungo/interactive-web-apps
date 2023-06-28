@@ -15,16 +15,19 @@ const batteries = 35 * 2
 const pens = 5 * 'NONE_SELECTED' 
 
 if (location === RSA) { 
-	shipping = 400 && currency ='R' }
+	shipping = 400 
+	currency ='R' }
 
 if (location === NAM) {
-	shipping = 600 && currency === '$'
+	shipping = 600
+	currency = '$'
 } else {
-	shipping = 800 && currency === '$'
+	shipping = 800
+	currency = '$'
 }
 
 
-if (shoes + batteries + pens + shirts + toys >= 1000 || >= 60  ) {
+if (shoes + batteries + pens + shirts + toys >= 1000 || 60 ) {
 	if (location = NAM && customers < 2) {
 			if (location = RSA)
 		    shipping = 0 || calcShipping

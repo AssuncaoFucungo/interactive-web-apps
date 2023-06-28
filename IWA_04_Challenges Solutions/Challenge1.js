@@ -2,6 +2,9 @@ const date = 2050
 const status = 'student'
 let count = 0
 
+let name = 5
+console.log(name)
+
 if (date == 2050) {
 	console.log("January", 'New Year’s Day')
 	console.log("March", 'Human Rights Day')
