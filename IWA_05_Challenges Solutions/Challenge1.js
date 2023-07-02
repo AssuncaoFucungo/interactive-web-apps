@@ -17,7 +17,7 @@ const pens = 5 * NONE_SELECTED
 
 const totalCost = shoes + toys + shirts + batteries + pens 
 
-console.log(totalCost)
+console.log(currency + totalCost)
 
 if (userLocation === 'RSA') { 
 	shipping = 400 
@@ -54,7 +54,7 @@ if (totalCost >= 60 && userLocation === 'NAM') {
 }	
 	}
 	
-console.log(currency + (totalCost + shipping))
+console.log((currency) + (totalCost + shipping))
 
 
 
