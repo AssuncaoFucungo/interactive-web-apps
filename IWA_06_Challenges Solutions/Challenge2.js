@@ -8,7 +8,7 @@ const minuteOfDay = 00;
 
 // Only change below this line
 
-if (hourOfDay === 0 && minuteOfDay === 0) {
+if (hourOfDay === minuteOfDay ) {
     const taxPercentage = salary * (parseInt(tax) / 100)
     const expenses = rent + food + transport + taxPercentage
     const balance = salary - expenses
