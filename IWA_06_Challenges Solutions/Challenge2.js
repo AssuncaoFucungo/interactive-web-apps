@@ -8,13 +8,19 @@ const minuteOfDay = 00;
 
 // Only change below this line
 
-if (hourOfDay === minuteOfDay ) {
+if (hourOfDay !== undefined && minuteOfDay !== undefined) {
+  if (hourOfDay === 00 && minuteOfDay === 00) {
     const taxPercentage = salary * (parseInt(tax) / 100)
     const expenses = rent + food + transport + taxPercentage
     const balance = salary - expenses
     console.log("R " + balance.toFixed(2))
+//   } else {
+//     console.log("Balance not calculated due to it not being a new day");
+//   }
+// } else {
+//   console.log("Balance not calculated due to time not being known");
 }
-
+}
 // if hourOfDay && (minuteOfDay !== null) && (hourOfDay == '00') && (minuteOfDay == '00') {
 // 	const taxAsDecimal = tax / '100'
 //   const startingAfterTax = salary * '1' - taxAsDecimal
