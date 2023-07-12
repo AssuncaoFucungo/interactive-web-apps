@@ -10,10 +10,13 @@ const divider = '----------------------------------'
 
 // Only change below this line
 
-const owedLeo = parseInt(leoBalance)
-const owedSarah = parseFloat(sarahBalance)
+const owedLeo = parseInt(leoBalance) * -1
+const owedSarah = parseFloat(sarahBalance) * -1
 
-const leo = leoName + leoSurname + ' Owed: R' + owedLeo.toFixed(2) + '\n'
+const leoNewSurname = leoSurname.trim() 
+
+
+const leo = leoName + " " + leoNewSurname + ' Owed: R' + owedLeo.toFixed(2) + '\n'
 const sarah = sarahName + sarahSurname + ' Owed: R' + owedSarah.toFixed(2) + '\n'
 const total = '\nTotal amount owed:' + (owedLeo+owedSarah).toFixed(2) + '\n'
 

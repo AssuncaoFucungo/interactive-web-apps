@@ -53,7 +53,7 @@ const futureId = 9
 
 // Do not change code above this comment
 
-// Code checking if any item is assigned to 9 
+// Code checking if any item is assigned to 9 before anything else
 
 if ([futureId] in holidays) {
     console.log(holidays[futureId].name)
@@ -61,29 +61,35 @@ if ([futureId] in holidays) {
     console.log(`ID ${futureId} not created yet`)
 }
 
-// Updating of dates and names 
+// Temporary time and name change
 
 copied = holidays[christmas]
 console.log(copied)
+
 copied.name ='X-mas'
 console.log(copied.name)
-
-// Time set to midnight
 
 copied.date.setHours(0)
 copied.date.setMinutes(0)
 console.log(copied.date)
+
  
-isEarlier = copied.date < holidays[christmas].date
-console.log('New date is earlier:', isEarlier)
+isEarlier = copied.date.getHours() < holidays[6].date.getHours()
+console.log(copied.date)
+console.log( holidays[6].date)
 
 
-if (isEarlier) copied.date = correctDate
+
+//I console logged both copied.date and holiday[christmas].date why are both 00:00 and not 13:25 < 00:00 to create a comparison
+
+// console.log('New date is earlier:', isEarlier)
 
 
-console.log('ID change:', holidays[christmas].id != copied.id || copied.id)
-console.log('Name change:', holidays[christmas].name != copied.name || copied.name)
-console.log('Date change:', holidays[christmas].date != copied.date || copied.date)
+
+
+// console.log('ID change:', holidays[christmas].id != copied.id || copied.id)
+// console.log('Name change:', holidays[christmas].name != copied.name || copied.name)
+// console.log('Date change:', holidays[christmas].date != copied.date || copied.date)
 
 // const firstHolidayTimestamp = Math.min(
 //     holidays[0].date.getTime,

@@ -1,4 +1,4 @@
-const nickName = "Timmy";
+const nickName = "Timmy"
 const firstName = "Timothy";
 
 if (nickName) {
@@ -8,3 +8,4 @@ if (nickName) {
 } else {
   console.log("Good morning!");
 }
+
